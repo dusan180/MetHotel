@@ -1,0 +1,25 @@
+{
+  "rooms": [
+    {
+      "idsobe": 1,
+      "nazivsobe": "Soba 1",
+      "kapacitetsobe": 2,
+      "cenasobe": 302,
+      "id": 1
+    },
+    {
+      "idsobe": 2,
+      "nazivsobe": "Soba 2",
+      "kapacitetsobe": 4,
+      "cenasobe": 499,
+      "id": 2
+    },
+    {
+      "idsobe": 3,
+      "nazivsobe": "Soba 3",
+      "kapacitetsobe": 3,
+      "cenasobe": 429,
+      "id": 3
+    }
+  ]
+}

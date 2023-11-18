@@ -1,0 +1,41 @@
+<h2>Rooms</h2>
+
+<table *ngIf="rooms">
+  <thead>
+    <tr>
+      
+      <th>Naziv Sobe</th>
+      <th>Kapacitet</th>
+      <th>Cena</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let room of rooms">
+      
+      <td>{{ room.nazivsobe }}</td>
+      <td>{{ room.kapacitetsobe }}</td>
+      <td>{{ room.cenasobe }} $</td>
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="!rooms">
+  <p>Loading...</p>
+</div>
+
+<form #roomForm="ngForm">
+<div>
+  <label>ID:</label>
+  <input [(ngModel)]="newRoom.idsobe" name="idsobe" type="number" required>
+  
+  <label>Naziv sobe:</label>
+  <input [(ngModel)]="newRoom.nazivsobe" name="nazivsobe" type="text" required>
+  
+  <label>Kapacitet:</label>
+  <input [(ngModel)]="newRoom.kapacitetsobe" name="kapacitetsobe" type="number" required>
+  
+  <label>Cena:</label>
+  <input [(ngModel)]="newRoom.cenasobe" name="cenasobe" type="number" required>
+  <button type="button" (click)="dodajSobu()">Dodaj sobu</button>
+</div>  
+</form>
